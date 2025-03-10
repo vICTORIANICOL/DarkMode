@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Montserrat", serif;    header*/
+/* font-family: "Roboto", serif;  text */
+
+
+
+.benefitsSection {
+  display: flex;
+  justify-content: center;
+  background-color: #121212; 
+}
+
+.benefitsContainer{
+  width: 210mm;  /* A4 width */
+  height: auto; /* A4 height */
+  background-color: #919191;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.benefitsHeader  {
+  color: #121212;
+  font-family: "Montserrat", serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 25px 25px 30px 25px;
+  text-align: left;
+  max-width: 80%;
+  line-height: 1.3;
+}
+
+.benefits1{
+  color: #121212;
+  font-family: "Roboto", serif;
+ font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  max-width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+  letter-spacing: 0.05em;
+}
+
+.benefitsText1{
+  color: #121212;
+  font-family: "Montserrat", serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 2;
+  max-width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+  letter-spacing: 0.05em;
+}
+
+
+.benefitsText{
+  color: #121212;
+  font-family: "Roboto", serif;
+margin-top: 10px;
+  font-size: 16px;
+  line-height: 2;
+  max-width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+  letter-spacing: 0.05em;
+}
+
+.benefitsText a{
+  color: #B34100;
+  text-decoration: none;
+}
+
+.benefitsImage {
+  height: 300px;
+  object-fit: cover;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.benefitsSubtext {
+  color: #121212;
+  font-family: "Montserrat", serif;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px 40px 20px 25px;
+  margin: 25px;
+  border-left: 3px solid #B34100;
+  position: relative;
+}
+
+.benefitsSubtext::before {
+  content: "";
+  color: #B34100;
+}
+
+.benefitsSubtext::after {
+  content: "";
+  color: #B34100;
+}
+
+@media (max-width: 480px) {
+  .benefitsContainer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .benefitsHeader {
+    font-size: 24px;
+    margin: 15px;
+    max-width: 100%;
+  }
+
+  .benefitsText {
+    font-size: 14px;
+    margin: 15px;
+    line-height: 1.8;
+  }
+
+  
+
+  .benefitsButton {
+    grid-column: 1;
+    grid-row: 3;
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+
+  .benefitsImage {
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

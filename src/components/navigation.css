@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Montserrat", serif;    header*/
+/* font-family: "Roboto", serif;  text */
+
+body {
+  font-family: 'Montserrat', serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #0C0C0C;
+  color: #B34100;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 32px; 
+  font-weight: bold;
+   background: linear-gradient(90deg, 
+    #FF5C00, 
+    #B34100,
+    #FF8C00, 
+    
+    #FF9B00, 
+    #E6C200,
+    #B34100, 
+    #FF6D00
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+  display: inline;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  color: #B34100;
+  font-size: 16px; 
+  overflow: hidden;
+  transition: color 0.3s ease;
+  padding: 6px 16px; 
+}
+
+.nav-link {
+  color: #B34100;
+  text-decoration: none;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, 
+    #FF5C00, 
+    #FF8C00, 
+    #FF9B00, 
+    #FFDA00, 
+    #B34100, 
+    #8A3200, 
+    #612400, 
+    #4B1C00,
+    #FF6D00
+  );
+  background-size: 200% auto;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+/* Hover Effects */
+.nav-item:hover {
+  color: #9B3922;
+}
+
+.nav-item:hover::after {
+  transform: translateX(0%);
+  animation: gradient-89 3s linear infinite;
+}
+
+@keyframes gradient-89 {
+  0% { background-position: 100% 0%; }
+  50% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+.nav-item span {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+/* Mobile and tablet styles */
+.menu-button {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Media Query for tablet and mobile (up to 768px) */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    background: none;
+    border: none;
+    color: #B34100;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1001;
+  }
+
+  .menu-button svg {
+    fill: #B34100;
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0C0C0C;
+    color: #B34100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .mobile-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-menu-item {
+    font-size: 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  .mobile-menu-item:hover {
+    color: #9B3922;
+  }
+
+  .mobile-menu-item a {
+    color: #B34100;
+    text-decoration: none;
+  }
+
+  /* Close button styles */
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #B34100;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1002; /* Higher z-index to ensure visibility */
+  }
+
+  .close-button svg {
+    fill: #B34100;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* For smaller mobile screens (up to 480px) */
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 8px 10px; 
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    color: #B34100;
+  }
+
+  .mobile-menu-item {
+    font-size: 20px;
+  }
+
+  .mobile-menu-item a {
+    color: #B34100;
+    text-decoration: none;
+  }
+
+  .close-button {
+    top: 15px;
+    right: 15px;
+  }
+}

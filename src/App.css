@@ -1,0 +1,15 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', serif;
+  background-color: #0C0C0C;
+  color: #B34100;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+

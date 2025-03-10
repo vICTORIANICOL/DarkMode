@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Montserrat", serif;    header*/
+/* font-family: "Roboto", serif;  text */
+
+/* Container for the whole section */
+.sectionContainer {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #121212;
+  color: #dcdcdc;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh; 
+  position: relative;
+}
+
+.headerContainer::after {
+  content: '';
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%; 
+  height: 3px; 
+  background: linear-gradient(90deg, 
+    #FF5C00, 
+    #FF8C00, 
+    #FF9B00, 
+    #FFDA00, 
+    #B34100, 
+    #8A3200, 
+    #612400, 
+    #4B1C00,
+    #FF6D00
+  );
+  background-size: 200% auto;
+  transition: all 0.5s;
+}
+
+/* Optional Hover Effect for Animation */
+.headerContainer:hover::after {
+  animation: gradient-89 3s linear infinite;
+}
+
+/* Keyframes for the gradient animation */
+@keyframes gradient-89 {
+  0% { background-position: 100% 0%; }
+  50% { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+.headerText {
+  font-family: "Roboto", serif; 
+  font-size: 120px; 
+  font-weight: bold;
+  color: #B34100;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.introText {
+  font-family: "Roboto", serif; 
+  font-size: 34px;
+  letter-spacing: 17px;
+  font-weight: 500;
+  color: #dcdcdc;
+  margin-top: 10px; 
+  margin-left: 25px;
+  width: 100%;
+  text-align: center;
+  max-width: 600px; 
+}
+
+/* Container for the links */
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  padding-left: 10px; 
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.subheading {
+  font-family: "Roboto", serif;
+  font-size: 32px;
+  letter-spacing: 2.5px;
+  color: #dcdcdc;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.linkList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #dcdcdc; 
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  margin: 10px 0;
+  position: relative;
+  padding-left: 35px; 
+  margin-top: 18px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #FF6D00;
+}
+
+/* orange vertical line */
+.link::before {
+  content: "";
+  position: absolute;
+  left: 1px; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 27px; 
+  background-color: #FF6D00; 
+}
+
+@media (max-width: 480px) {
+  .sectionContainer {
+    padding: 20px 10px;
+  }
+
+  .headerContainer {
+    height: 40vh;
+  }
+
+  .headerContainer::after {
+    bottom: 30px;
+    height: 2px;
+  }
+
+  .headerText {
+    font-size: 48px;
+  }
+
+  .introText {
+    font-size: 18px;
+    letter-spacing: 8px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .linksContainer {
+    padding-left: 5px;
+    width: 100%;
+  }
+
+  .subheading {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .link {
+    font-size: 16px;
+    padding-left: 25px;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+  }
+
+  .link::before {
+    height: 20px;
+  }
+}

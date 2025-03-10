@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Montserrat", serif;    header*/
+/* font-family: "Roboto", serif;  text */
+
+.footer {
+  
+  background-color: #0C0C0C;
+  color: #B34100;
+  padding: 8px 0;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  font-family: "Roboto", serif;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 85%;
+    padding: 6px 0;
+  }
+
+  .footer-content p {
+    font-size: 11px;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    width: 80%;
+    padding: 4px 0;
+  }
+
+  .footer-content p {
+    font-size: 9px;
+    padding: 0 6px;
+  }
+}
+
+
