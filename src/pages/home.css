@@ -416,6 +416,80 @@ top: 40%;
 
 
 /* Animated Boxes Container */
+
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style the button */
+.customButton {
+  text-decoration: none;
+  background-color: transparent;
+  color: #404040;
+  border: 2px solid #404040;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat", serif;
+  outline: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+}
+
+.customButton:hover {
+  color: transparent;
+  border-color: #404040;
+  transform: translateY(-2px);
+}
+
+.customButton .icon svg {
+  transition: all 0.3s ease;
+  width: 24px; 
+}
+
+.customButton:hover .icon svg {
+  transform: translateX(8px);
+  color: #404040;
+  width: 32px; 
+}
+
+@media (max-width: 480px) {
+  .buttonWrapper {
+    margin-bottom: 20px;
+  }
+  
+  .customButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .customButton .icon svg {
+    width: 20px;
+  }
+  
+  .customButton:hover .icon svg {
+    width: 28px;
+  }
+}
+
+
+
+
+
+
+
 .animated-boxes {
   display: flex;
   justify-content: center;

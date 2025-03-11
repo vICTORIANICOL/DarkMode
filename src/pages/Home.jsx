@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import video1 from "../assets/2bck.mp4";
 import sec1 from "../assets/sec1.jpeg";
 import sec2 from "../assets/sec2.png";
@@ -23,6 +24,7 @@ import Section5 from "../components/section5/Section5";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
+  
 
   // Scroll to top on component mount (initial load)
   useEffect(() => {
@@ -68,6 +70,14 @@ const Home = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
+
+ 
+
+
+
+
 
   return (
     <div className="home-page-container">
@@ -135,6 +145,45 @@ const Home = () => {
                   Ren sort, når det kombineres med hvid farve i UI-design, kan
                   være problematisk, da det skaber for meget kontrast.
                 </p>
+
+                <div>
+                  <Link
+                    to="/about#risksSection"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="buttonWrapper">
+                      <button className="customButton">
+                        Læs Mere
+                        <div className="icon">
+                          <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style={{
+                              transition: "all 0.3s ease",
+                            }}
+                          >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                              fill="currentColor"
+                              style={{
+                                transformOrigin: "right",
+                                transform: "scaleX(1)",
+                                transition: "transform 0.3s ease",
+                              }}
+                              onMouseEnter={(e) =>
+                                (e.target.style.transform = "scaleX(2.8)")
+                              }
+                              onMouseLeave={(e) =>
+                                (e.target.style.transform = "scaleX(1)")
+                              }
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
 
@@ -153,6 +202,45 @@ const Home = () => {
                   #121212) for bedre læsbarhed, reduceret øjenbelastning og
                   forbedret kontrast.
                 </p>
+
+                <div>
+                  <Link
+                    to="/about#benefitsSection"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="buttonWrapper">
+                      <button className="customButton">
+                        Læs Mere
+                        <div className="icon">
+                          <svg
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            style={{
+                              transition: "all 0.3s ease",
+                            }}
+                          >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                              d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                              fill="currentColor"
+                              style={{
+                                transformOrigin: "right",
+                                transform: "scaleX(1)",
+                                transition: "transform 0.3s ease",
+                              }}
+                              onMouseEnter={(e) =>
+                                (e.target.style.transform = "scaleX(2.8)")
+                              }
+                              onMouseLeave={(e) =>
+                                (e.target.style.transform = "scaleX(1)")
+                              }
+                            ></path>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

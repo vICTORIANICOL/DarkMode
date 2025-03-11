@@ -7,13 +7,13 @@
 
 
 
-.benefitsSection {
+.discoverSection {
   display: flex;
   justify-content: center;
   background-color: #121212; 
 }
 
-.benefitsContainer{
+.discoverContainer{
   width: 210mm;  /* A4 width */
   height: auto; /* A4 height */
   background-color: #919191;
@@ -24,7 +24,7 @@
   padding-bottom: 25px;
 }
 
-.benefitsHeader  {
+.discoverHeader  {
   color: #121212;
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -35,7 +35,7 @@
   line-height: 1.3;
 }
 
-.benefits1{
+.discover1{
   color: #121212;
   font-family: "Roboto", serif;
  font-weight: bold;
@@ -47,7 +47,7 @@
   letter-spacing: 0.05em;
 }
 
-.benefitsText1{
+.discoverText1{
   color: #121212;
   font-family: "Montserrat", serif;
   font-style: italic;
@@ -61,7 +61,7 @@
 }
 
 
-.benefitsText{
+.discoverText{
   color: #121212;
   font-family: "Roboto", serif;
 margin-top: 10px;
@@ -73,7 +73,7 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.benefitsText a{
+.discoverText a{
   color: #B34100;
   text-decoration: none;
   
@@ -106,18 +106,18 @@ margin-top: 10px;
 
 
 @media (max-width: 480px) {
-  .benefitsContainer {
+  .discoverContainer {
     width: 100%;
     padding: 20px;
   }
 
-  .benefitsHeader {
+  .discoverHeader {
     font-size: 24px;
     margin: 15px;
     max-width: 100%;
   }
 
-  .benefitsText {
+  .discoverText {
     font-size: 14px;
     margin: 15px;
     line-height: 1.8;
@@ -129,7 +129,7 @@ margin-top: 10px;
     margin-bottom: 30px;
   }
 
-  .benefitsImage {
+  .discoverImage {
     width: 100%;
     height: 200px;
     margin: 15px 0;

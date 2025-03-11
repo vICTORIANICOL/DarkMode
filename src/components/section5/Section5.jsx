@@ -13,6 +13,8 @@ import { IoKeypad } from "react-icons/io5";
 import { MdLiveTv } from "react-icons/md";
 import { TbEyeSpark } from "react-icons/tb";
 import Section6 from "../section6/Section6";
+import { Link } from "react-router-dom";
+
 
 
 const Section5 = () => {
@@ -103,7 +105,6 @@ const Section5 = () => {
               </div>
             </div>
           </div>
-
           <div className={styles.content}>
             <div className={styles.gridContainer}>
               <div className={styles.parent}>
@@ -186,7 +187,6 @@ const Section5 = () => {
                     Alle store sociale medier tilbyder mørk tilstand
                   </p>
                 </div>
-
                 <div className={`${styles.gridItem} ${styles.div12}`}>
                   <TbEyeSpark className={styles.gridItemIcon} />
                   <p className={styles.gridItemText}>
@@ -197,9 +197,46 @@ const Section5 = () => {
               </div>
             </div>
           </div>
+
+
+
+          
+          <div>
+            <Link to="/about#discoverSection" style={{textDecoration: 'none'}}>
+              <div className={styles.buttonWrapper}>
+                <button className={styles.customButton}>
+                  Læs Mere
+                  <div className={styles.icon}>
+                    <svg
+                      viewBox="0 0 24 24" 
+                      xmlns="http://www.w3.org/2000/svg"
+                      style={{
+                        transition: "all 0.3s ease"
+                      }}
+                    >
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor"
+                        style={{
+                          transformOrigin: "right",
+                          transform: "scaleX(1)",
+                          transition: "transform 0.3s ease"
+                        }}
+                        onMouseEnter={(e) => e.target.style.transform = "scaleX(2.8)"}
+                        onMouseLeave={(e) => e.target.style.transform = "scaleX(1)"}
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </Link>
+          </div>
+
+
         </div>
       </section>
-     <Section6 />
+      <Section6 />
     </div>
   );
 };

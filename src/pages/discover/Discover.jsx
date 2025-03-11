@@ -13,7 +13,7 @@
     }, []);
   
     return (
-      <section className={styles.benefitsSection}>
+      <section className={styles.discoverSection}>
         <div
           className="arrow"
           onClick={() => {
@@ -23,19 +23,19 @@
             });
           }}
         ></div>
-        <div className={styles.benefitsContainer}>
-          <h1 className={styles.benefitsHeader}>
+        <div className={styles.discoverContainer}>
+          <h1 className={styles.discoverHeader}>
             Fakta om Webdesign <br /> i Mørk Tilstand
           </h1>
 
-          <p className={styles.benefitsText1}>
+          <p className={styles.discoverText1}>
             Tænk på, hvad det betyder for miljøet. Takket være energibesparelsen
             er Dark UI mere miljøvenlig end sine lysere modstykker.
           </p>
 
-          <p className={styles.benefits1}>Tidligere end du troede</p>
+          <p className={styles.discover1}>Tidligere end du troede</p>
 
-          <p className={styles.benefitsText}>
+          <p className={styles.discoverText}>
             Dark UI går tilbage til 1981, hvor IBM-computere brugte mørke
             baggrunde til at maskere sorte huller forårsaget af
             skærmbegrænsninger. Dette forbedrede brugeroplevelsen og blev
@@ -58,15 +58,14 @@
             </a>
           </p>
 
-          <p className={styles.benefitsText}>
+          <p className={styles.discoverText}>
             Af samme grund blev der brugt grøn farve til bogstaver og tegn, som
             havde vedholdenhed længe nok til at skinne kontinuerligt indtil
-            næste skærmscanning - hvilket reducerede effekten af sorte
-            striber.
+            næste skærmscanning - hvilket reducerede effekten af sorte striber.
           </p>
 
-          <p className={styles.benefits1}>En industri overlevede</p>
-          <p className={styles.benefitsText}>
+          <p className={styles.discover1}>En industri overlevede</p>
+          <p className={styles.discoverText}>
             Mens Dark UI faldt i de fleste industrier, beholdt bilsektoren det
             af en afgørende årsag - driverfokus. Hastighedsmålere bruger lyse
             skilte på mørk baggrund for at sikre synlighed, især under dårlige
@@ -92,9 +91,9 @@
             </a>
           </p>
 
-          <p className={styles.benefits1}>OLED</p>
+          <p className={styles.discover1}>OLED</p>
 
-          <p className={styles.benefitsText}>
+          <p className={styles.discoverText}>
             Det hele startede i det øjeblik, hvor Sony udgav sine første
             OLED-skærme (organisk lysdiode), som er kendetegnet ved, at hver
             pixel skinner for sig selv med forskellig lysintensitet. I tilfælde
@@ -105,16 +104,16 @@
             energi!
           </p>
 
-          <p className={styles.benefitsText}>
+          <p className={styles.discoverText}>
             Hvis du har troet, at du som person, der laver applikationer, ikke
-            har indflydelse på reduktionen af en sådan mængde energi, så
-            kommer du med hjælp til Dark Mode og nævnte OLED-skærme.
-            Selvfølgelig afhænger den nøjagtige procentdel af energi, der drænes
-            af sålens skærm, af mange faktorer, som hvordan appen er oprettet,
-            og hvilken lysstyrke der bruges.
+            har indflydelse på reduktionen af en sådan mængde energi, så kommer
+            du med hjælp til Dark Mode og nævnte OLED-skærme. Selvfølgelig
+            afhænger den nøjagtige procentdel af energi, der drænes af sålens
+            skærm, af mange faktorer, som hvordan appen er oprettet, og hvilken
+            lysstyrke der bruges.
           </p>
 
-          <p className={styles.benefitsText}>
+          <p className={styles.discoverText}>
             Mere detaljerede data blev leveret af eksperter fra Google, og
             resultaterne blev præsenteret under Android Dev Summit 2018, det vil
             sige i løbet af året, hvor Android introducerede Dark Mode. De
@@ -138,9 +137,10 @@
             </a>
           </p>
 
-          <div className={styles.benefitsText1}>
-            &ldquo;Design is really an act of communication, which means having a deep
-            understanding of the person with whom the designer is communicating.&rdquo;
+          <div className={styles.discoverText1}>
+            &ldquo;Design is really an act of communication, which means having
+            a deep understanding of the person with whom the designer is
+            communicating.&rdquo;
           </div>
         </div>
       </section>
