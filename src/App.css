@@ -1,10 +1,12 @@
-
+html {
+  scroll-padding-top: 170px;
+}
 
 body {
   margin: 0;
-  font-family: 'Montserrat', serif;
-  background-color: #0C0C0C;
-  color: #B34100;
+  font-family: "Montserrat", serif;
+  background-color: #0c0c0c;
+  color: #b34100;
 }
 
 .app {
@@ -13,3 +15,8 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 480px) {
+  html{
+    scroll-padding-top: 90px;
+  }
+}

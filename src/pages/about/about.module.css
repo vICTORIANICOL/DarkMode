@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* font-family: "Montserrat", serif;    header*/
 /* font-family: "Roboto", serif;  text */
@@ -10,23 +10,21 @@
 .aboutSection {
   display: flex;
   justify-content: center;
-  background-color: #121212; 
-  
+  background-color: #121212;
 }
 
-.aboutContainer{
-  width: 210mm;  /* A4 width */
+.aboutContainer {
+  width: 210mm; /* A4 width */
   height: auto; /* A4 height */
   background-color: #919191;
   display: flex;
   flex-direction: column;
   padding-left: 40px;
   padding-right: 40px;
-   padding-bottom: 20px;
- 
+  padding-bottom: 20px;
 }
 
-.aboutHeader  {
+.aboutHeader {
   color: #121212;
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -37,7 +35,7 @@
   line-height: 1.3;
 }
 
-.aboutText{
+.aboutText {
   color: #121212;
   font-family: "Roboto", serif;
   font-size: 16px;
@@ -54,7 +52,7 @@
   background-color: #7f7e7e;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  width: calc(100% + 40px); 
+  width: calc(100% + 40px);
   margin-left: -40px;
   padding: 20px 40px;
   box-sizing: border-box;
@@ -73,13 +71,13 @@
 }
 
 .aboutButton {
-  background-color: #B34100;
+  background-color: #b34100;
   border-radius: 8px;
   box-sizing: border-box;
   color: #121212;
   cursor: pointer;
   display: inline-block;
-  font-family:"Montserrat", serif;
+  font-family: "Montserrat", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
@@ -100,7 +98,7 @@
 
 .aboutButton:hover {
   background-color: #121212;
-  color: #B34100;
+  color: #b34100;
   transform: scale(1.05);
   box-shadow: 0 5px 15px rgba(179, 65, 0, 0.3);
 }
@@ -163,17 +161,16 @@
   }
 }
 
-
 /*----------------------------------------------------benefits SECTION-----------------------*/
 
 .benefitsSection {
   display: flex;
   justify-content: center;
-  background-color: #121212; 
+  background-color: #121212;
 }
 
-.benefitsContainer{
-  width: 210mm;  /* A4 width */
+.benefitsContainer {
+  width: 210mm; /* A4 width */
   height: auto; /* A4 height */
   background-color: #919191;
   display: flex;
@@ -182,7 +179,7 @@
   padding-right: 40px;
 }
 
-.benefitsHeader  {
+.benefitsHeader {
   color: #121212;
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -193,10 +190,10 @@
   line-height: 1.3;
 }
 
-.benefits1{
+.benefits1 {
   color: #121212;
   font-family: "Roboto", serif;
- font-weight: bold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -205,7 +202,7 @@
   letter-spacing: 0.05em;
 }
 
-.benefitsText1{
+.benefitsText1 {
   color: #121212;
   font-family: "Montserrat", serif;
   font-style: italic;
@@ -217,11 +214,10 @@
   letter-spacing: 0.05em;
 }
 
-
-.benefitsText{
+.benefitsText {
   color: #121212;
   font-family: "Roboto", serif;
-margin-top: 10px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -230,8 +226,8 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.benefitsText a{
-  color: #B34100;
+.benefitsText a {
+  color: #b34100;
   text-decoration: none;
 }
 
@@ -252,18 +248,18 @@ margin-top: 10px;
   line-height: 1.6;
   padding: 20px 40px 20px 25px;
   margin: 25px;
-  border-left: 3px solid #B34100;
+  border-left: 3px solid #b34100;
   position: relative;
 }
 
 .benefitsSubtext::before {
   content: "";
-  color: #B34100;
+  color: #b34100;
 }
 
 .benefitsSubtext::after {
   content: "";
-  color: #B34100;
+  color: #b34100;
 }
 
 @media (max-width: 480px) {
@@ -284,8 +280,6 @@ margin-top: 10px;
     line-height: 1.8;
   }
 
-  
-
   .benefitsButton {
     grid-column: 1;
     grid-row: 3;
@@ -302,19 +296,16 @@ margin-top: 10px;
   }
 }
 
-
-
 /*----------------------------------------------------RISKS SECTION-----------------------*/
-
 
 .risksSection {
   display: flex;
   justify-content: center;
-  background-color: #121212; 
+  background-color: #121212;
 }
 
-.risksContainer{
-  width: 210mm;  /* A4 width */
+.risksContainer {
+  width: 210mm; /* A4 width */
   height: auto; /* A4 height */
   background-color: #919191;
   display: flex;
@@ -323,7 +314,7 @@ margin-top: 10px;
   padding-right: 40px;
 }
 
-.risksHeader  {
+.risksHeader {
   color: #121212;
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -334,10 +325,10 @@ margin-top: 10px;
   line-height: 1.3;
 }
 
-.risks1{
+.risks1 {
   color: #121212;
   font-family: "Roboto", serif;
- font-weight: bold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -346,7 +337,7 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.risksText1{
+.risksText1 {
   color: #121212;
   font-family: "Montserrat", serif;
   font-style: italic;
@@ -358,11 +349,10 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-
-.risksText{
+.risksText {
   color: #121212;
   font-family: "Roboto", serif;
-margin-top: 10px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -371,13 +361,13 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.risksSubtext a{
-  color: #B34100;
+.risksSubtext a {
+  color: #b34100;
   text-decoration: none;
 }
 
 .risksImage {
-    width: 400px;
+  width: 400px;
   height: 300px;
   object-fit: cover;
   margin: 20px auto;
@@ -394,22 +384,22 @@ margin-top: 10px;
   line-height: 1.6;
   padding: 20px 40px 20px 25px;
   margin: 25px;
-  border-left: 3px solid #B34100;
+  border-left: 3px solid #b34100;
   position: relative;
 }
 
 .risksSubtext::before {
   content: "";
-  color: #B34100;
+  color: #b34100;
 }
 
 .risksSubtext::after {
   content: "";
-  color: #B34100;
+  color: #b34100;
 }
 
 .riskbutton {
-  background-color: #B34100;
+  background-color: #b34100;
   border-radius: 8px;
   color: #121212;
   cursor: pointer;
@@ -425,11 +415,9 @@ margin-top: 10px;
 
 .riskbutton:hover {
   background-color: #121212;
-  color: #B34100;
+  color: #b34100;
   transform: scale(1.05);
 }
-               
-            
 
 @media (max-width: 480px) {
   .risksContainer {
@@ -449,8 +437,6 @@ margin-top: 10px;
     line-height: 1.8;
   }
 
- 
-
   .risksImage {
     width: 100%;
     height: 200px;
@@ -460,17 +446,16 @@ margin-top: 10px;
   }
 }
 
-
 /*----------------------------------------------------DISCOVER  SECTION-----------------------*/
 
 .discoverSection {
   display: flex;
   justify-content: center;
-  background-color: #121212; 
+  background-color: #121212;
 }
 
-.discoverContainer{
-  width: 210mm;  /* A4 width */
+.discoverContainer {
+  width: 210mm; /* A4 width */
   height: auto; /* A4 height */
   background-color: #919191;
   display: flex;
@@ -480,7 +465,7 @@ margin-top: 10px;
   padding-bottom: 25px;
 }
 
-.discoverHeader  {
+.discoverHeader {
   color: #121212;
   font-family: "Montserrat", serif;
   font-size: 36px;
@@ -491,10 +476,10 @@ margin-top: 10px;
   line-height: 1.3;
 }
 
-.discover1{
+.discover1 {
   color: #121212;
   font-family: "Roboto", serif;
- font-weight: bold;
+  font-weight: bold;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -503,7 +488,7 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.discoverText1{
+.discoverText1 {
   color: #121212;
   font-family: "Montserrat", serif;
   font-style: italic;
@@ -516,11 +501,10 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-
-.discoverText{
+.discoverText {
   color: #121212;
   font-family: "Roboto", serif;
-margin-top: 10px;
+  margin-top: 10px;
   font-size: 16px;
   line-height: 2;
   max-width: 90%;
@@ -529,10 +513,9 @@ margin-top: 10px;
   letter-spacing: 0.05em;
 }
 
-.discoverText a{
-  color: #B34100;
+.discoverText a {
+  color: #b34100;
   text-decoration: none;
-  
 }
 
 .discoverImage {
@@ -554,12 +537,9 @@ margin-top: 10px;
   font-family: "Roboto", serif;
 }
 
-.imageCaption a{
+.imageCaption a {
   color: #121212;
 }
-
-
-
 
 @media (max-width: 480px) {
   .discoverContainer {
