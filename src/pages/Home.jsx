@@ -15,16 +15,13 @@ import sec11 from "../assets/web8.jpg";
 import sec12 from "../assets/web9.jpg";
 import sec13 from "../assets/web10.jpg";
 
-import "../components/section5/Section5"
+import "../components/section5/Section5";
 
 import "./home.css";
 import Section5 from "../components/section5/Section5";
 
-
-
 const Home = () => {
   const [animate, setAnimate] = useState(false);
-  
 
   // Scroll to top on component mount (initial load)
   useEffect(() => {
@@ -71,14 +68,6 @@ const Home = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-
- 
-
-
-
-
-
   return (
     <div className="home-page-container">
       <div
@@ -107,7 +96,7 @@ const Home = () => {
           <p>Nyheder og Statistik om Sort Farvedesign</p>
         </div>
 
-        <a href="/About" className="button">
+        <a href="/about#aboutSection" className="button">
           <span></span>
           <span></span>
           <span></span>
