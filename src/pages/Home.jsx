@@ -96,13 +96,13 @@ const Home = () => {
           <p>Nyheder og Statistik om Sort Farvedesign</p>
         </div>
 
-        <a href="/About" className="button">
+        <Link to="/about" className="button">
           <span></span>
           <span></span>
           <span></span>
           <span></span>
           Get Started
-        </a>
+        </Link>
       </div>
 
       {/* Dark Mode Section 1 */}
