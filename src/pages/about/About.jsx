@@ -14,21 +14,21 @@ const About = () => {
     window.scrollTo(0, 0); // This scrolls the page to the top on page load
   }, []);
 
-   const location = useLocation();
+  const location = useLocation();
 
-   useEffect(() => {
-     if (location.hash) {
-       const element = document.querySelector(location.hash);
-       if (element) {
-         element.scrollIntoView({ behavior: "smooth" });
-       }
-     }
-   }, [location]);
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <div>
       {/* ---------------------------------------- About Section ---------------------------------------- */}
-      <section className={styles.aboutSection}>
+      <section id="aboutSection" className={styles.aboutSection}>
         <div
           className="arrow"
           onClick={() => {
