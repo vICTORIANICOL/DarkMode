@@ -96,7 +96,7 @@ const Home = () => {
           <p>Nyheder og Statistik om Sort Farvedesign</p>
         </div>
 
-        <a href="/about#aboutSection" className="button">
+        <a href="/About" className="button">
           <span></span>
           <span></span>
           <span></span>
