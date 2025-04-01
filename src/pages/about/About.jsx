@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div>
       {/* ---------------------------------------- About Section ---------------------------------------- */}
-      <section id="aboutSection" className={styles.aboutSection}>
+      <section className={styles.aboutSection}>
         <div
           className="arrow"
           onClick={() => {
